@@ -1,0 +1,4 @@
+nohup unbuffer python stableroom.py > ~/pywww/stableroom.txt &
+echo $! > ./lastpid
+echo 'Here comes the log by tail -f, ctrl-c will not kill the process it self'
+tail -f ~/pywww/stableroom.txt
